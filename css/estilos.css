@@ -1,0 +1,567 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.sticky-container2{ display:none;}
+html{
+	scroll-behavior: smooth;
+}
+h1{ background-image:url(http://cdn30.us1.fansshare.com/image/central/wallpapers-por-https-www-facebook-wallpaperrosariocentral-fref-tstmplcomponentphocadownload-central-770089462.jpg);
+	padding-bottom: 15px;
+    padding-top: 10px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+} 
+.hijo{text-align: center;
+	padding-left: 10%;
+	margin-right: 7%;
+	margin-left: 2%;
+	-webkit-text-stroke: 2px blue;
+	text-transform: uppercase;
+	text-shadow: 1px  2px 5px #eeff00,
+				 2px  4px 7px #f9fd12,
+				 3px  6px 9px #eefa49, 
+				 4px  8px 11px #cecb14, 
+				 5px 10px 15px #7c7a11,
+				 6px 12px 19px #000000;}
+
+h1 img { position:absolute;
+		width: 60px;
+		height: 61px;
+		top: 0;
+		right:7%;
+	}
+a {
+	text-decoration: none;
+	outline: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+body {
+    font-family: 'Noto Sans JP', sans-serif;	
+	background: #f2f2f2;
+}
+audio { width:100%;
+		background-color:#090cdb;
+		height:15px;
+}
+
+/* * ============================== */
+/* * ============ HEADER ========== */
+/* * ============================== */
+.navbar {
+	background-image: url(https://p4.wallpaperbetter.com/wallpaper/324/285/270/polygonal-triangles-shades-yellow-wallpaper-preview.jpg);
+	position: sticky;
+	top: 0;
+	font-size: 20px;
+}
+.navbar a {
+	color: rgb(47, 14, 235);
+	display: inline-block;
+	padding: 20px;
+	width: 100%;
+	text-align: center;
+	transition: .3s ease-out all;
+	font-weight: bold;
+}
+.navbar a:hover {
+	background: #0980db;
+	color: #fff;
+	font-size: 22px;
+	font-weight: 10px;
+	text-decoration: none;
+
+}
+.contenedor {
+	max-width: 1000px;
+	width: 90%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+/* * ============================== */
+/* * ===== CONTENEDOR IMAGEN ====== */
+/* * ============================== */
+
+.slider{
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+	background-color:#090cdb;
+  }
+  .slider ul {
+  display:flex;
+	padding: 0;
+	width: 400%;
+	animation:cambio 20s infinite alternate ease-in;
+  }
+  .slider li {
+	width: 100%;
+	list-style: none;
+  }
+  .slider img {
+	width:100%;
+	height:800px;
+	object-fit: scale-down;
+
+  }
+  @keyframes cambio {
+	0% {
+	  margin-left:0;
+	}
+	20%{ margin-left:0;}
+	25%{
+	  margin-left:-100%;
+	}
+	45%{margin-left:-100%; }
+	50%{margin-left:-200%;}
+	70%{margin-left:-200%;}
+	75%{margin-left:-300%;}
+	100%{margin-left:-300%;}
+  }
+  
+/* * ============================== */
+/* * ============ MAIN ============ */
+/* * ============================== */
+#blog{ background-image: url(../img/nieve.jpg);}
+main {
+	min-height: 100vh;
+	
+}
+main .contenedor{
+margin-left:15%;
+}
+
+main .contenido p {
+	margin-bottom: 20px;
+	line-height: 30px;
+	color: #000000;
+	
+}
+main .contenido .titulo {
+    font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	padding-top: 40px;
+	
+}
+main .contenido .fecha {
+	font-size: 14px;
+	color: #B5B5B5;
+	
+}
+.post h1{color:white;
+	text-align: center;
+	text-shadow:4px 8px 14px #000000, 4px 8px 14px #000000;
+	font-size: 40px;
+	font-weight: bold;
+
+}
+main ul{list-style: none; /* Quitamos los marcadores */
+	padding: 0; /* Quitamos el padding por defecto de la lista */
+	margin-left: 10px; /* Separamos la lista de la izquierda */
+
+}
+main ul li::before{content: "\2022";  
+	color: #090cdb; 
+	display: inline-block; 
+	padding-right: 10px;
+	font-size: 50px;
+	line-height: 25px;
+	vertical-align: -11px;
+	width: 15px;
+
+}
+/* ARTICULO 3 - CAROUSEL*/
+
+.slider1{
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+	background-color:rgba(255, 255, 255, 0.11);
+  }
+  .slider1 ul {
+  display:flex;
+	padding: 0;
+	width: 1000%;
+	animation:cambio 20s infinite alternate ease-in;
+  }
+  .slider1 li {
+	width: 100%;
+	list-style: none;
+  }
+  .slider1 img {
+	width:100%;
+	height:90%;
+	object-fit: cover;
+
+  }
+  @keyframes cambio {
+	0% {
+	  margin-left:0;
+	}
+	20%{ margin-left:0;}
+	25%{
+	  margin-left:-100%;
+	}
+	45%{margin-left:-100%; }
+	50%{margin-left:-200%;}
+	70%{margin-left:-200%;}
+	75%{margin-left:-300%;}
+	100%{margin-left:-300%;}
+  }
+  
+/* * ============================== */
+/* * ============ ASIDE =========== */
+/* * ============================== */
+aside {
+	min-width: 30%;
+	margin: 40px 20px 20px 0;
+	height: 100%;
+	background-color:  #090cdb;
+	padding: 20px;
+	border-radius: 3px;
+	position: sticky;
+	top:20px;
+}
+aside .titulo {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	font-size: 24px;
+	margin-bottom: 20px;
+	color: #f2f2f2;
+}
+aside .indice a {
+	display: block;
+	margin-bottom: 10px;
+	color: #FFCD48;
+	font-weight:bold;
+}
+
+/* * ============================== */
+/* * ========== FOOTER ============ */
+/* * ============================== */
+footer .navbar{
+	position: sticky;
+	bottom: 0;
+}
+
+
+/* * ============================== */
+/* * ====== MEDIA QUERIES ========= */
+/* * ============================== */
+@media screen and (max-width: 1600px){
+	main .contenedor{
+		margin-left:0%;
+		}
+}
+@media screen and (max-width: 1131px){
+	.sticky-container{display:none;
+	}
+	.sticky-container2{ display:contents; text-align: center; margin: auto; padding:auto; }
+	.sticky-container2 ul { list-style-type: none;}
+	.sticky-container2 li {  
+		float: right;
+		margin-right: 10px;
+		padding: 0 4px;}
+	.sticky-container2 li img{
+		object-fit: cover ;
+	}
+	.stycky2p{ text-align: center;
+				padding-top: 50px;
+				color:#1606fc;
+				font-weight:bold;
+				text-transform: uppercase;
+				text-shadow: 1px  2px 5px #eeff00,
+							 2px  4px 7px #f9fd12,
+							 3px  6px 9px #eefa49, 
+							 4px  8px 11px #cecb14, 
+							 5px 10px 15px #7c7a11,
+							 6px 12px 19px #000000;
+			}
+}
+@media screen and (max-width: 900px){
+	h1 img { position:absolute;
+		width: 45px;
+		height: 45px;
+		top: 10px;
+		right:5%;
+	}
+	.navbar .contenedor {
+		flex-wrap: wrap;
+		margin: 0;
+		width: 100%;
+	}
+	.navbar a {
+		width: auto;
+		flex: 1;
+	}
+	.contenedor-imagen {
+		height: 50vh;
+	}
+	main .contenedor {
+		flex-direction: column;
+		margin: auto;
+	}
+	aside{
+		position: static;
+		margin: 40px 0 0 0;
+	}
+
+
+		
+}
+.slider img {
+	width:100%;
+	height:450px;
+	object-fit: scale-down;
+  }
+@media screen and (max-width: 700px){
+	h1 img { position:absolute;
+		width: 45px;
+		height: 45px;
+		top: 25px;
+		right:0;
+	}
+	.slider img {
+		width:100%;
+		height:450px;
+		object-fit: scale-down;
+	
+	  }
+
+}
+
+/*
+
+
+HISTORIA.HTML
+
+
+*/
+.historia{
+	background: url(../img/nieve.jpg)
+}
+.historia-h2{
+	color: rgb(235, 231, 14);
+	display: inline-block;
+	padding: 20px;
+	width: 100%;
+	text-align: center;
+	transition: .3s ease-out all;
+	font-size:70px;
+	text-shadow: 1px  2px 5px #eeff00,
+	2px  4px 7px #1606fc,
+	3px  6px 9px #0d0ab3, 
+	4px  8px 11px #1b10bb, 
+	5px 10px 15px #2d117c,
+	6px 12px 19px #000000;}
+
+.historia-h3{
+	font-size: medium;
+	text-align: justify;
+	padding: 1%;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: 1%;
+
+}
+/*
+
+
+CAMPEONATOS.html
+
+
+*/
+.grid-container_ {display: grid;
+	grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+	grid-auto-rows: 250px;
+	grid-gap: 10px;
+
+}
+
+.grid-container_ img{width: 100%;
+		height:100%;
+		object-fit: cover;
+	}
+.grid-container_ img:first-child{ grid-column: 1/3;
+					grid-row:1/3;
+
+}
+.grid-container_ img:nth-child(6){
+						grid-column: 2/4;
+						grid-row: 3/5;
+}
+
+
+.grid-container_ img:nth-child(9){
+					grid-row: span 3;
+}
+
+.grid-container_ img:nth-child(16){
+					grid-row: span 2;
+}
+
+/*copa argentina 2018*/
+.slider3 {
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+	
+}
+
+.slider3 ul {
+	display: flex;
+	padding: 0;
+	width: 1200%;
+	
+	animation: cambio 20s infinite alternate linear;
+}
+
+.slider3 li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider img {
+	width: 100%;
+	height: 600px;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+footer video {width:100%; 
+	height:auto; 
+	padding:0;
+	margin:0;
+	}
+/*CONTACTO*/
+.navbare{ background-image: url(../img/9.png);}
+form{
+	width:600px;
+	height:auto;
+	padding:32px;
+	border:10px solid #f5e508;
+	border-radius:20px;
+	margin:auto;
+	background-color:rgb(16, 39, 248);
+	box-shadow: 28px 16px 116px 17px rgb(16, 39, 248);
+-webkit-box-shadow: 28px 16px 116px 17px rgb(16, 39, 248);
+-moz-box-shadow: 28px 16px 116px 17px rgb(16, 39, 248);
+	
+}
+form label{
+	width:144px;
+	font-weight:bold;
+	display:inline-block;
+	color:#fff;
+}
+form input[type="text"],
+form input[type="email"]{
+	width:360px;
+	padding:6px 20px;
+	border:1px solid #f5e508;
+	border-radius:6px;
+	background-color:#f5e508;
+	margin:16px 0;
+	display:inline-block;
+}
+form input[type="submit"]{
+	width:100%;
+	padding:16px 32px;
+	margin-top:64px;
+	border:6px solid #f5e508 ;
+	border-radius:10px;
+	display:block;
+	color:#fff;
+	font-size: 24px;
+	background-color:#0c08f5;
+} 
+form input[type="submit"]:hover{
+	cursor:pointer;
+}
+textarea{
+	width:100%;
+	height:200px;
+	border:2px solid #f6f6f6;
+	border-radius:6px;
+	background-color:#f6f6f6;			
+	margin:16px 0;
+	/*resize: vertical | horizontal | none | both*/
+	resize:none;
+	display:block;
+}
+.holas{background-color: white;}
+.uno{ text-align: center;
+	font-size: 50px;
+	padding: 10px;
+
+	color:#1606fc;
+	font-weight:bold;
+	text-transform: uppercase;
+	text-shadow: 1px  2px 5px #eeff00,
+				 2px  4px 7px #f9fd12,
+				 3px  6px 9px #eefa49, 
+				 4px  8px 11px #cecb14, 
+				 5px 10px 15px #7c7a11,
+				 6px 12px 19px #000000;}
+/*redes sociales*/
+
+.sticky-container{
+    padding:0px;
+    margin:0px;
+    position:fixed;
+    right:-130px;
+    top:230px;
+    width:420px;
+    z-index: 1100;
+}
+.sticky li{
+    list-style-type:none;
+    background-image: url(../img/campeonatos/1.jpg);
+    color:#2f00ff;
+    height:86px;
+    padding:0px;
+    margin:0px 0px 1px 0px;
+    -webkit-transition:all 0.25s ease-in-out;
+    -moz-transition:all 0.25s ease-in-out;
+    -o-transition:all 0.25s ease-in-out;
+    transition:all 0.25s ease-in-out;
+    cursor:pointer;
+}
+.sticky li:hover{
+    margin-left:-115px;
+}
+.sticky li img{
+	object-fit: cover;
+    float:left;
+    margin:5px 4px;
+    margin-right:5px;
+}
+.sticky li p{
+    padding-top:5px;
+    margin:0px;
+    line-height:16px;
+    font-size:11px;
+}
+.sticky li p a{
+    text-decoration:none;
+    color:#f5e508;
+	font-size:20px;
+	font-weight:bold;
+}
+.sticky li p a:hover{
+    text-decoration:underline;
+}
