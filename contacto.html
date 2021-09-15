@@ -8,7 +8,6 @@
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
 	<script src="https://kit.fontawesome.com/ac91d00b59.js" crossorigin="anonymous"></script>
-	<link rel="icon" href="img/rc.ico">
 </head>
 <body>
 
@@ -30,7 +29,7 @@
         <source src="audio/2.mp3"  type="audio/mp3" >
     </audio>
 	<nav class="navbare">
-    <form action="#" target="" method="get" name="formDatosPersonales">
+    <form action="#" target="" method="get" name="formDatosPersonales" class="form">
 
 		<label for="nombre">Nombre</label>
 		<input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre"/>
@@ -48,7 +47,26 @@
 		<textarea name="mensaje" for="mensaje" placeholder="describe brevemente en menos de 300 carácteres" maxlength="300"></textarea>
 		
 		<input type="submit" name="enviar" value="Enviar datos"/>
+	</form>
+	<form action="#" target="" method="get" name="formDatosPersonales" class="form2">
 
+		<label for="nombre">Nombre</label>
+		<input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre"/>
+	
+		<label for="apellidos">Apellidos</label>
+		<input type="text" name="apellidos" id="apellidos" placeholder="1r Apellido"/>
+	
+		<label for="email" >Email</label>
+		<input type="email" name="email" id="email" placeholder="email" required />
+	
+		<label for="asunto">Asunto</label>
+		<input type ="text" name="asunto" id="asunto" placeholder="titular de la consulta"/>
+	
+		<label for="mensaje">Mensaje</label>
+		<textarea name="mensaje" for="mensaje" placeholder="describe brevemente en menos de 300 carácteres" maxlength="300"></textarea>
+		
+		<input type="submit" name="enviar" value="enviar datos"/>
+	</form>
 		<div class="sticky-container">
 			<ul class="sticky">
 				<li>
@@ -70,7 +88,7 @@
 
 			</ul>
 		</div>
-	</nav>
+
 	<div class="holas"><p class="uno"> UBICACIÓN </p>
 		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.394768006842!2d-60.67600618481444!3d-32.91416678093086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b654a08896e0f7%3A0x4ee98cd74ab24d07!2sGigante%20de%20Arroyito!5e0!3m2!1ses-419!2sar!4v1631224596125!5m2!1ses-419!2sar" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" class="holas"></iframe>
 
@@ -98,6 +116,7 @@
 				</li>
 			</ul>
 		</div>
+
 	<footer>
 		<div class="contenedor-imagen">
 			<img src="img/8.jpg" alt="">
